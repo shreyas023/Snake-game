@@ -94,11 +94,6 @@
         font-size: 25px;
         cursor: pointer;
     }
-    .btn::after{
-        background: white;
-        color: #000;
-        transform: scale(1.1);
-    }
 }
 @media (max-width:420px){
     #board{
