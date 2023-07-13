@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     width: 100vw;
 }
 #scoreBox{
@@ -31,8 +31,8 @@
 }
 #board{
    background-color: #000; 
-   height: 92vmin;
-   width: 90vmin;
+   height: 90vmin;
+   width: 85vmin;
    border: #fff solid 2px;
    border-radius: 15px;
    box-shadow: 1px 1px 20px #fff;
@@ -58,4 +58,51 @@
     border: #06f600 solid 2px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #06f600;
+}
+.mobile{
+    display: none;
+}
+
+@media (max-width:821px){
+    #board{
+        height: 85vmin;
+        width: 75vmin;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .row{
+        display: flex;
+        gap: 10px;
+    }
+    .btn{
+        height: 50px;
+        width: 50px;
+        font-weight: 700;
+        border-radius: 5px;
+        border: 1px solid white;
+        background: linear-gradient(rgb(51, 51, 51),rgb(0, 0, 0));
+        color: white;
+        box-shadow: 0px 2px 3px white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .btn::after{
+        background: white;
+        color: #000;
+        transform: scale(1.1);
+    }
+}
+@media (max-width:420px){
+    #board{
+        height: 100vmin;
+        width: 85vmin;
+    }
 }

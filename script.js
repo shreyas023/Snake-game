@@ -148,6 +148,41 @@ window.addEventListener('keydown',e =>{
 });
 
 
+// mobile responsive 
+
+var screenWidth = window.innerWidth;
+
+
+if(screenWidth <= 820){
+    Up.addEventListener('click',x=>{
+        inputDir = {x:0,y:-1};
+        moveSound.play();
+        inputDir.x = 0;
+        inputDir.y = -1;
+    });
+    Down.addEventListener('click',x=>{
+        inputDir = {x:0,y:-1};
+        moveSound.play();
+        inputDir.x = 0;
+        inputDir.y = 1;
+    });
+    Right.addEventListener('click',x=>{
+        inputDir = {x:0,y:-1};
+        moveSound.play();
+        inputDir.x = 1;
+        inputDir.y = 0;
+    });
+    Left.addEventListener('click',x=>{
+        inputDir = {x:0,y:-1};
+        moveSound.play();
+        inputDir.x = -1;
+        inputDir.y = 0;
+    });
+}
+
+	
+
+
 
 
 
