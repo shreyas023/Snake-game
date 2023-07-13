@@ -105,4 +105,7 @@
         height: 100vmin;
         width: 85vmin;
     }
+    .mobile{
+        bottom:25px;
+    }
 }
