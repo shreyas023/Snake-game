@@ -64,9 +64,14 @@
 }
 
 @media (max-width:821px){
+    .body{
+        align-items: flex-start;
+    }
     #board{
         height: 85vmin;
         width: 75vmin;
+        top: 125px;
+        position: absolute;
     }
     .mobile{
         display: flex;
@@ -83,8 +88,8 @@
         gap: 10px;
     }
     .btn{
-        height: 50px;
-        width: 50px;
+        height: 75px;
+        width: 75px;
         font-weight: 700;
         border-radius: 5px;
         border: 1px solid white;
@@ -94,13 +99,22 @@
         font-size: 25px;
         cursor: pointer;
     }
+    .btn::after{
+        background: white;
+        color: #000;
+        transform: scale(1.1);
+    }
 }
 @media (max-width:420px){
     #board{
         height: 100vmin;
         width: 85vmin;
     }
+    .btn{
+        height: 50px;
+        width: 50px;
+    }
     .mobile{
-        bottom:25px;
+        bottom: 25px;
     }
 }
