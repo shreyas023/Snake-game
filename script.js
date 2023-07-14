@@ -4,7 +4,7 @@ const foodSound = new Audio('music/food.mp3');
 const GameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
 const music = new Audio('music/music.mp3');
-let speed = 15;
+let speed = 8;
 let LastPaintTime = 0;
 let score = 0;
 
